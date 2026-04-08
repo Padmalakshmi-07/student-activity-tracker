@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>STUDENT ACTIVITY TRACKER</h1>
+
+        <!-- NAVIGATION -->
+        <div class="nav">
+            <button onclick="showSection('home')">🏠 Home</button>
+            <button onclick="showSection('activities')">📋 Activities</button>
+            <button onclick="showSection('progress')">📊 Progress</button>
+        </div>
+
+        <!-- HOME -->
+        <div id="home" class="section">
+            <h2>Welcome!</h2>
+
+            <!-- START BUTTON -->
+            <button class="start-btn" onclick="showSection('activities')">
+                Start Tracking Activities
+            </button>
+
+            <p class="quote"></p>
+            <p class="quote">STAY FOCUSED . STAY CONSISTENT . STAY PRODUCTIVE</p>
+            <p class="quote"></p>
+        </div>
+
+        <!-- ACTIVITIES -->
+        <div id="activities" class="section">
+            <div id="taskContainer"></div>
+        </div>
+
+        <!-- PROGRESS -->
+        <div id="progress" class="section">
+            <p id="progressText">0 out of 0 completed</p>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
